@@ -1,2 +1,2 @@
-# 06 web (Django)
+﻿# 06 web (Django)
 Урок 06 Пример проекта на Django
