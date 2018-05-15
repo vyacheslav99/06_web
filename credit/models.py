@@ -59,7 +59,8 @@ class ClientProfile(models.Model):
     partner_contr = models.ForeignKey(Contractor, on_delete=models.PROTECT)
 
     def __str__(self):
-        return '{0}: {1} {2} {3}'.format(self.id, self.last_name.encode('utf-8'), self.first_name.encode('utf-8'), self.father_name.encode('utf-8'))
+        return '{0}: {1} {2} {3}'.format(self.id, self.last_name.encode('utf-8'), self.first_name.encode('utf-8'),
+                                         self.father_name.encode('utf-8'))
         #return '{0}: {1} {2} {3}'.format(self.id, self.last_name, self.first_name, self.father_name)
 
     def __unicode__(self):
